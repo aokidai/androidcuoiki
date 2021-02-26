@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Rabbit House</string>
+    <string name="welcome">Xin chào</string>
+    <string name="self">Bán hàng</string>
+    <string name="check">Kiểm tra kho</string>
+    <string name="staff">Q.Lý N.Viên</string>
+    <string name="cost">Q.Lý K.H</string>
+    <string name="signout">Đăng xuất</string>
+    <string name="logingamen">ĐĂNG NHẬP</string>
+    <string name="usernmae">Tên Đ.Nhập</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="forgotpass">Quên mật khẩu?</string>
+    <string name="log">Đăng nhập</string>
+    <string name="exit">Thoát</string>
+    <string name="forgot">QUÊN MẬT KHẨU</string>
+    <string name="yes">Tiếp</string>
+    <string name="no">Hũy</string>
+    <string name="forgotpapa">Hãy liên hệ với admin để có UserID!</string>
+    <string name="btnThemBH">Thêm</string>
+    <string name="themhd">THÊM HÓA ĐƠN</string>
+    <string name="tenkh">Khách Hàng</string>
+    <string name="tenmon">Tên Món</string>
+    <string name="SoLuong">Số Lượng</string>
+    <string name="Luu">Lưu</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rabbit_house">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rabbit_House">
+        <activity android:name=".suaKHH"></activity>
+        <activity android:name=".themKHH" />
+        <activity android:name=".ThemKH" />
+        <activity android:name=".mhsua" />
+        <activity android:name=".thembh" />
+        <activity android:name=".Seft_cafe" />
+        <activity android:name=".forgot_pass" />
+        <activity android:name=".loginGamen" />0g
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
