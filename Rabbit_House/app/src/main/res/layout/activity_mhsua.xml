@@ -70,6 +70,28 @@
                 android:id="@+id/edtSoLuong"
                 android:textColor="#000000"/>
         </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <TextView
+                android:id="@+id/tvTG"
+                android:textColor="#000000"
+                android:text="Ngày: "/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <DatePicker
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:datePickerMode="spinner"/>
+        </TableRow>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

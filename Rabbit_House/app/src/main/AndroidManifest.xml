@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabbit_House">
-        <activity android:name=".suaKHH"></activity>
+        <activity android:name=".mhsuamonnnn"></activity>
+        <activity android:name=".mhthemmmmon" />
+        <activity android:name=".mhmon" />
+        <activity android:name=".suaKHH" />
         <activity android:name=".themKHH" />
         <activity android:name=".ThemKH" />
         <activity android:name=".mhsua" />
         <activity android:name=".thembh" />
         <activity android:name=".Seft_cafe" />
         <activity android:name=".forgot_pass" />
-        <activity android:name=".loginGamen" />0g
+        <activity android:name=".loginGamen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
