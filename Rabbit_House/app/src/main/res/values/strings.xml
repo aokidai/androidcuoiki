@@ -22,4 +22,11 @@
     <string name="tenmon">Tên Món</string>
     <string name="SoLuong">Số Lượng</string>
     <string name="Luu">Lưu</string>
+    <string-array
+        name="string_array_name">
+        <item>Teo</item>
+        <item>Ty</item>
+        <item>Bin</item>
+
+    </string-array>
 </resources>
