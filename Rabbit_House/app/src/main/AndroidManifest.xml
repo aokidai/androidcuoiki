@@ -9,16 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabbit_House">
-        <activity android:name=".mhsuamonnnn"></activity>
+        <activity android:name=".mhsuamonnnn"/>
         <activity android:name=".mhthemmmmon" />
 
-        <activity android:name=".mhmon" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+        <activity android:name=".mhmon" />
         <activity android:name=".suaKHH" />
         <activity android:name=".themKHH" />
         <activity android:name=".ThemKH" />

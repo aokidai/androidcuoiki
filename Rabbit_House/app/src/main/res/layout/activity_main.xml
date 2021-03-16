@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
-                android:text="@string/self"
+                android:text="Q.LÝ MÓN"
                 android:textColor="#000000"
                 app:backgroundTint="@color/white" />
         </TableRow>

@@ -22,6 +22,7 @@
     <string name="tenmon">Tên Món</string>
     <string name="SoLuong">Số Lượng</string>
     <string name="Luu">Lưu</string>
+    <string name="ttQuenpass">QUÊN MẬT KHẨU</string>
     <string-array
         name="string_array_name">
         <item>Teo</item>

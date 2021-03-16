@@ -8,19 +8,15 @@
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-        <TableRow>
             <Button
                 android:id="@+id/btnThemKH"
                 android:layout_gravity="right"
                 android:text="@string/btnThemBH"/>
-        </TableRow>
-        <TableRow>
             <ListView
                 android:id="@+id/lvKH"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent">
 
             </ListView>
-        </TableRow>
     </TableLayout>
 </LinearLayout>

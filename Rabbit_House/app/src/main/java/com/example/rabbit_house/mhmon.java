@@ -29,8 +29,8 @@ public class mhmon extends AppCompatActivity {
 //        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, fiilliste);
 //        lvMon.setAdapter(adapter );
 //        ArrayList<String> list =new ArrayList<String>(Arrays.asList(fiilliste));
-        list.add(new Mon("1", "Teo"));
-        list.add(new Mon("2", "Ty"));
+        list.add(new Mon("1", "Cafe"));
+        list.add(new Mon("2", "Trà xanh"));
         //   Toast.makeText(MainActivity.this, list.get(1).toString(), Toast.LENGTH_LONG).show(); 
         adapter = new ArrayAdapter<Mon>(this, android.R.layout.simple_list_item_1,list);
         lvMon.setAdapter(adapter);

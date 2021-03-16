@@ -52,7 +52,7 @@
             android:layout_marginRight="15dp">
             <TextView
                 android:id="@+id/tvPass"
-                android:text="@string/usernmae"
+                android:text="Password"
                 android:textColor="#000000" />
 
             <EditText
@@ -98,6 +98,15 @@
             android:layout_marginTop="25dp"
             android:gravity="right">
 
+            <TextView
+                android:id="@+id/tvSaipass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="25dp"
+                android:text=""
+                android:textStyle="italic"
+                android:textColor="#F02849" />
             <TextView
                 android:id="@+id/btnForgot"
                 android:layout_width="wrap_content"
