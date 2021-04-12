@@ -15,8 +15,8 @@
 
         <TableRow
             android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#006fc9">
 
             <ImageView
@@ -40,6 +40,7 @@
                 android:textStyle="bold" />
 
         </TableRow>
+
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"

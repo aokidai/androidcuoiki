@@ -8,15 +8,65 @@
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/btnThemBH"
-                android:layout_gravity="right"
-                android:text="@string/btnThemBH"/>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#d4d4d4"
+                android:hint="Chọn Ngày ..."
+                android:padding="15dp"
+                android:textColor="#897"
+                android:textColorHint="#090"
+                android:textSize="20sp"
+                android:textStyle="bold"  />
+
+
+        </TableRow>
+           <TableRow
+               android:id="@+id/tableRow1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#006fc9">
+               <ImageView
+                   android:id="@+id/imgUser"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_launcher_background" />
+               <TextView
+                   android:id="@+id/tvWelcome"
+                   android:layout_gravity="center"
+                   android:text="@string/welcome"
+                   android:textColor="#ffffff"
+                   android:textSize="20dp" />
+
+               <TextView
+                   android:id="@+id/tvUsername"
+                   android:layout_gravity="center"
+                   android:textColor="#ffffff"
+                   android:textSize="20dp"
+                   android:textStyle="bold" />
+           </TableRow>
+        <TableRow>
             <ListView
-                android:id="@+id/lvnhanvien"
+                android:id="@+id/lvmon"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent">
 
             </ListView>
+            <ListView
+                android:id="@+id/lvhoadon"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+            </ListView>
+        </TableRow>
     </TableLayout>
 </LinearLayout>

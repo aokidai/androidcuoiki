@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnBanHang, btnThemKH;
+    Button btnBanHang, btnThemKH,btnQLMon;
     TextView tvSignout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnBanHang = (Button) findViewById(R.id.btnSelf);
         btnThemKH = (Button) findViewById(R.id.btnCostmermng);
+        btnQLMon = (Button)findViewById(R.id.btnQLMon);
         tvSignout = (TextView) findViewById(R.id.btnSignout);
         btnBanHang.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent signout = new Intent(MainActivity.this, loginGamen.class);
                 startActivity(signout);
+            }
+        });
+        btnQLMon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent qlmon = new Intent(MainActivity.this,mhmon.class);
+                startActivity(qlmon);
             }
         });
     }

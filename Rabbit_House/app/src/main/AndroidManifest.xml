@@ -16,7 +16,6 @@
         <activity android:name=".suaKHH" />
         <activity android:name=".themKHH" />
         <activity android:name=".ThemKH" />
-        <activity android:name=".mhsua" />
         <activity android:name=".thembh" />
         <activity android:name=".Seft_cafe" />
         <activity android:name=".forgot_pass" />

@@ -31,15 +31,15 @@ public class mhthemmmmon extends AppCompatActivity {
         btnLuu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            String ten=txtTenMon.getText().toString();
-            String loai=txtLoai.getText().toString();
-            Mon m=new Mon(loai,ten);
-            Intent intent = getIntent();
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("mon", m);
-            intent.putExtra("DATA", bundle);
+                String ten=txtTenMon.getText().toString();
+                String loai=txtLoai.getText().toString();
+                Mon m=new Mon(loai,ten);
+                Intent intent = getIntent();
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("mon", m);
+                intent.putExtra("DATA", bundle);
                 setResult(Activity.RESULT_OK, intent);
-            finish();
+                finish();
             }
         });
     }
