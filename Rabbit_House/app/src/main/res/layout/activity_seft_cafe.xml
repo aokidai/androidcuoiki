@@ -17,7 +17,7 @@
 
             <EditText
                 android:id="@+id/edtDate"
-                android:layout_width="200dp"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:background="#d4d4d4"
@@ -28,7 +28,11 @@
                 android:textSize="20sp"
                 android:textStyle="bold"  />
 
-
+            <Spinner
+                android:id="@+id/spKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"/>
         </TableRow>
            <TableRow
                android:id="@+id/tableRow1"

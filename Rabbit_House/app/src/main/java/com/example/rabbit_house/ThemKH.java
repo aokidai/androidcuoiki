@@ -32,8 +32,8 @@ public class ThemKH extends AppCompatActivity {
         setContentView(R.layout.activity_them_k_h);
         btnThemKH=(Button)findViewById(R.id.btnThemKH);
         lvKH=(ListView)findViewById(R.id.lvKH);
-        list.add(new khach("1", "teo"));
-        list.add(new khach("2","ty"));
+        list.add(new khach("teo", "1"));
+        list.add(new khach("ty","2"));
         adapter= new ArrayAdapter<khach>(this, android.R.layout.simple_list_item_1,list);
         lvKH.setAdapter(adapter);
         btnThemKH.setOnClickListener(new View.OnClickListener() {

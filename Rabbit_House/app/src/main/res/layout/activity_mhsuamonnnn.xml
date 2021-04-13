@@ -43,12 +43,11 @@
         android:id="@+id/txtLoai"
         android:layout_width="288dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:ems="10"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/txtma" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTenMon" />
 
     <Button
         android:id="@+id/btnLuu"

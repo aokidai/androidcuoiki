@@ -6,6 +6,10 @@ public class khach implements Serializable {
     private String Ten;
     private String sdt;
 
+    public khach(String ten) {
+        Ten = ten;
+    }
+
     public khach(String ten, String sdt) {
         Ten = ten;
         this.sdt = sdt;
@@ -29,6 +33,6 @@ public class khach implements Serializable {
 
     @Override
     public String toString() {
-        return this.Ten + " - "+ this.sdt;
+        return this.Ten ;
     }
 }

@@ -2,6 +2,8 @@ package com.example.rabbit_house;
 
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Calendar;
+
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
@@ -16,19 +18,26 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Seft_cafe extends AppCompatActivity {
+public class Seft_cafe extends Activity {
     ArrayList<Mon>list = new ArrayList<Mon>();
     ArrayAdapter<Mon>adapter;
+    ArrayList<khach>listKH = new ArrayList<khach>();
+    ArrayAdapter<khach>adapter1;
     ArrayList<banhang>listhd = new ArrayList<banhang>();
     ArrayAdapter<banhang>adapterhd;
     ListView lvmon,lvhoadon;
     EditText edtDate;
     int possselected = -1;
+    int bien = 0;
+    int posSpinner2 = -1;
     Button btnChon;
+    Spinner spKH;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,25 +45,49 @@ public class Seft_cafe extends AppCompatActivity {
         edtDate=(EditText) findViewById(R.id.edtDate);
         lvmon=(ListView)findViewById(R.id.lvmon);
         lvhoadon=(ListView)findViewById(R.id.lvhoadon);
- 
-        list.add(new Mon("1", "teo"));
-        list.add(new Mon("2","ty"));
-        listhd.add(new banhang("2","ty"));
+        spKH=(Spinner)findViewById(R.id.spKH);
+        listKH.add(new khach("teo"));
+        listKH.add(new khach("ty"));
+        adapter1 = new ArrayAdapter<khach>(this, android.R.layout.simple_list_item_1,listKH);
+        spKH.setAdapter(adapter1);
+        list.add(new Mon("1", "Cafe "));
+        list.add(new Mon("2","trà xanh"));
+        listhd.add(new banhang("2","Cafe","teo"));
         adapterhd= new ArrayAdapter<banhang>(this, android.R.layout.simple_list_item_1,listhd);
         lvhoadon.setAdapter(adapterhd);
 
         adapter= new ArrayAdapter<Mon>(this, android.R.layout.simple_list_item_1,list);
         lvmon.setAdapter(adapter);
-        lvmon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Mon m = list.get(position);
-                String Ten=m.getName();
-                String Ngay= edtDate.getText().toString();
-                listhd.add(new banhang(Ten, Ngay));
-                adapterhd.notifyDataSetChanged();
-            }
-        });
+
+//        spKH.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                posSpinner2 = position;
+//            }
+//        });
+
+
+            lvmon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    if (bien<=0) {
+                        Toast.makeText(getApplicationContext(), "Vui long chon ngay!!!", Toast.LENGTH_LONG).show();
+                        bien = 0;
+                    }
+                    else {
+                        Mon m = list.get(position);
+                        String Ten = m.getName();
+                        String Ngay = edtDate.getText().toString();
+                        String tenkh = spKH.getSelectedItem().toString();
+
+
+                        listhd.add(new banhang(Ten, Ngay, tenkh));
+                        adapterhd.notifyDataSetChanged();
+                    }
+                }
+            });
+
+
         lvhoadon.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -81,6 +114,7 @@ public class Seft_cafe extends AppCompatActivity {
                     }
                 }, mYear, mMonth, mDay);
                 datePickerDialog.show();
+                bien = bien + 1;
             }
         });
     }

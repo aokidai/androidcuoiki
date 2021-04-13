@@ -29,6 +29,6 @@ public class Mon implements Serializable {
 
     @Override
     public String toString() {
-      return this.loai + " - "+ this.name;
+      return  this.name;
     }
 }

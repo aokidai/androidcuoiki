@@ -4,12 +4,21 @@ import java.io.Serializable;
 
 public class banhang implements Serializable {
     private String TenMon;
-    private String Gia;
+    private String ten;
     private String Ngay;
-    public banhang(String TenMon,String Ngay)
+
+    public void setTen(String ten) {
+        this.ten = ten;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public banhang(String TenMon, String Ngay, String ten)
     {
         this.TenMon=TenMon;
-
+        this.ten=ten;
         this.Ngay=Ngay;
     }
     public  banhang(){
@@ -19,9 +28,7 @@ public class banhang implements Serializable {
         return TenMon;
     }
 
-    public String getGia() {
-        return Gia;
-    }
+
 
     public String getNgay() {
         return Ngay;
@@ -31,16 +38,12 @@ public class banhang implements Serializable {
         TenMon = tenMon;
     }
 
-    public void setGia(String gia) {
-        Gia = gia;
-    }
-
     public void setNgay(String ngay) {
         Ngay = ngay;
     }
 
     @Override
     public String toString() {
-        return this.TenMon + " "+this.Ngay;
+        return this.TenMon + " "+this.Ngay+ " "+this.ten;
     }
 }
